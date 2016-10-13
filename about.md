@@ -3,28 +3,11 @@ layout: page
 title: About
 ---
 
-<p class="message">
-  Hey there! This page is included as an example. Feel free to customize it for your own use upon downloading. Carry on!
-</p>
-
-In the novel, *The Strange Case of Dr. Jeykll and Mr. Hyde*, Mr. Poole is Dr. Jekyll's virtuous and loyal butler. Similarly, Poole is an upstanding and effective butler that helps you build Jekyll themes. It's made by [@mdo](https://twitter.com/mdo).
-
-There are currently two themes built on Poole:
-
-* [Hyde](http://hyde.getpoole.com)
-* [Lanyon](http://lanyon.getpoole.com)
-
-Learn more and contribute on [GitHub](https://github.com/poole).
-
-## Setup
-
-Some fun facts about the setup of this project include:
-
-* Built for [Jekyll](http://jekyllrb.com)
-* Developed on GitHub and hosted for free on [GitHub Pages](https://pages.github.com)
-* Coded with [Sublime Text 2](http://sublimetext.com), an amazing code editor
-* Designed and developed while listening to music like [Blood Bros Trilogy](https://soundcloud.com/maddecent/sets/blood-bros-series)
-
-Have questions or suggestions? Feel free to [open an issue on GitHub](https://github.com/poole/issues/new) or [ask me on Twitter](https://twitter.com/mdo).
-
-Thanks for reading!
+---
+이 블로그는 제가 공부하거나 개발을 하며 남기고 싶은 부분을 남기는 블로그입니다. 주로 Javascript 및 java 관련 내용을 다룰것이며 Big Data, Marchine Leaning부분도 틈틈히 다룰 것 입니다. 글의 오류와 지적은 댓글로 부탁드립니다.
+<br>
+<br>
+### 블로그가 아직 많이 부족합니다... =_  =;
+ex)반응형, 최근포스트, 검색 등등등..
+### Jekyll과 Github Page 좋아요 =ㅁ =;
+이 블로그는 [Jekyll](https://jekyllrb-ko.github.io/)을 기반으로 합니다.
