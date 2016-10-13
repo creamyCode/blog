@@ -1,6 +1,7 @@
-@import url(http://fonts.googleapis.com/earlyaccess/nanumbrushscript.css);
-@import url(http://fonts.googleapis.com/earlyaccess/notosanskr.css);
-@import url(http://fonts.googleapis.com/earlyaccess/kopubbatang.css);
+@font-face{font-family:'Noto Sans KR'; src:url('/public/font/NotoSansKR/NotoSansKR-Regular.otf')}
+@font-face{font-family:'KoPub Batang'; src:url('/public/font/KoPubBatang/KoPubBatang-Regular.ttf')}
+@font-face{font-family:'Nanum Brush Script'; src:url('/public/font/NanumBrushScript/NanumBrushScript-Regular.ttf')}
+
 @include selection {
   background: $theme-color;
   color: $white;
