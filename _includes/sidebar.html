@@ -21,7 +21,7 @@
       </div>
       {% if site.author.contact %} {% assign len = site.author.contact | size %} {% assign current_index = 0 %}
       <div class="sidebar-personal-info-section">
-        <p> Follow me: {% for contact in site.author.contact %} {% assign iconname = contact[0] %} {% if contact[0] == 'email' %} {% assign iconname = 'envelope' %} {% endif %}
+        <p> Follow me &nbsp; {% for contact in site.author.contact %} {% assign iconname = contact[0] %} {% if contact[0] == 'email' %} {% assign iconname = 'envelope' %} {% endif %}
           <a href="{{ contact[1] }}">
             <i class="fa fa-{{ iconname }}" aria-hidden="true"></i>
           </a>
@@ -35,7 +35,7 @@
   <nav class="sidebar-nav">
     {% for nav in site.nav %} {% assign is_relative = nav[1][0] | slice: 0 %} {% assign url = nav[1][0] %} {% if is_relative == '/' %} {% assign url = nav[1][0] | prepend: site.baseurl %} {% endif %} {% assign sub_len = nav[1] | size | minus: 1 %}
 
-    <span class="{% if sub_len > 0 %}foldable{% endif %}">
+    <!-- <span class="{% if sub_len > 0 %}foldable{% endif %}">
         <a class="sidebar-nav-item {% if page.url == nav[1][0] %}active{% endif %}" href="{{ url }}">
           {{ nav[0] }}
         </a>
@@ -52,9 +52,28 @@
               </a>
           {% endfor %}
         {% endfor %}
-      </span> {% endfor %}
+      </span> {% endfor %} -->
+
+
+
+    <a class="sidebar-nav-item {% if page.url == '/' %}active{% endif %}" href="/">Home</a>
+    <a class="sidebar-nav-item {% if page.url == '/about/' %}active{% endif %}" href="/about">About</a>
+    <a class="sidebar-nav-item {% if page.url == '/blog/categories/' %}active{% endif %}" href="/blog/categories">Categories</a>
+    {% for categorie in site.categories %}
+    <a class="sidebar-nav-item sidebar-nav-item-sub {% if page.url == '/blog/categories/#' + categorie[0] %}active{% endif %}" href="/blog/categories/#{{ categorie[0] }}">
+          {{ categorie[0] }}
+        </a>
+        {% endfor %}
+    <a class="sidebar-nav-item {% if page.url == '/blog/tags/' %}active{% endif %}" href="/blog/tags">Tags</a>
+    <div class="sidebar-tagbox">
+      {% for tag in site.tags %}
+      <a href="/blog/tags/#{{ tag[0] }}" class="post-tag">
+      {{ tag[0] }}
+    </a> {% endfor %}
+    </div>
 
   </nav>
+
 
   <div class="sidebar-item sidebar-powered">
     <p>

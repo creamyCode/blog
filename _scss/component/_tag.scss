@@ -1,6 +1,7 @@
 .post-tag {
   display: inline-block;
-  background: rgba($theme-color, 0.15);
+  //background: rgba($theme-color, 0.15);
+  background: rgba($blue, 0.15);
   padding: 0 .5rem;
   margin-right: .5rem;
   border-radius: 4px;
@@ -14,7 +15,8 @@
   }
   &:hover {
     text-decoration: none;
-    background: $theme-color;
+    //background: $theme-color;
+    background:$blue;
     color: $white;
   }
   @include transition(all .1s ease-in-out);
@@ -62,4 +64,3 @@
     font-family: $font-sans;
   }
 }
-

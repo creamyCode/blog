@@ -65,12 +65,12 @@
 
 /* Sidebar nav */
 .sidebar-nav {
-  border-bottom: 1px solid rgba(255,255,255,.1);
+  // border-bottom: 1px solid rgba(255,255,255,.1);
 }
 .sidebar-nav-item {
   display: block;
   padding: .5rem 1rem;
-  border-top: 1px solid rgba(255,255,255,.1);
+  // border-top: 1px solid rgba(255,255,255,.1);
 }
 .sidebar-nav-item-sub {
   &:before {
@@ -237,4 +237,15 @@ a.sidebar-nav-item:focus {
 
 .sidebar-license {
   font-size : 12px;
+}
+
+.sidebar .post-tag {
+  font-size: 12px;
+  margin-right: 2px;
+  padding: 0 .3rem;
+}
+
+.sidebar-tagbox {
+  margin-left: 30px;
+  margin-right: 30px;
 }
