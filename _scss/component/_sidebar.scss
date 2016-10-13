@@ -34,15 +34,16 @@
     right: auto;
   }
 
-  background-color: $pink;
+  // background-color: #e65100;
+  // background-color: $pink;
 
-  /*
+
   @if $theme-color != $default {
     background-color: $theme-color;
   } @else {
     background-color: darken($theme-color-dark, 10%);
   }
-  */
+
 }
 @media (min-width: 30em) {
   .sidebar {
@@ -214,4 +215,28 @@ a.sidebar-nav-item:focus {
       text-decoration: none;
     }
   }
+}
+
+.sidebar-title {
+  font-family: 'Nanum Brush Script', serif;
+  color : $white;
+  text-align: center;
+  font-size: 30px;
+  margin-bottom: 20px;
+}
+
+.sidebar-description {
+  font-family: 'Nanum Brush Script', serif;
+  font-size: 20px;
+  margin-bottom: 20px;
+}
+
+.sidebar-powered {
+  font-size : 12px;
+  position: fixed;
+  bottom : 0px;
+}
+
+.sidebar-license {
+  font-size : 12px;
 }

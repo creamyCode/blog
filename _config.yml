@@ -1,7 +1,7 @@
 # Site Info
 title: creamyCode
-tagline: '앞서 가는 방법의 비밀은 시작하는 것 !!'
-tagline_author: ' - Mark Twain -'
+tagline: '꿈꾸고 노력하라!!'
+#tagline_author: ''
 description: 'A Jekyll theme adapted from <a href="http://lanyon.getpoole.com/" target="_blank">Lanyon</a>. Made by <a href="http://codinfox.github.io" target="_blank">@codinfox</a>.'
 baseurl: ""
 url: http://creamycode.github.io
@@ -25,8 +25,9 @@ permalink: pretty
 
 # About/contact
 author:
-  name: Junil Seo
-  description: <strong>잡식성</strong> Full Stack developer.
+  name: creamyCode
+  description: Full Stack developer<br>
+               노력은 배신하지 않는다.
   gravatar: 3c2986ad7ac1f2230ea3596f44563328 # md5 hash of your email address
   contact:
     linkedin:  https://www.linkedin.com/in/준일-서-726583121
