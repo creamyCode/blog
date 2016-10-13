@@ -70,8 +70,11 @@
 
   if (navigator.platform) {
     if (0 > filter.indexOf(navigator.platform.toLowerCase())) {
-      $('.sidebar-title').css('font-size', '20px');
-      $('.sidebar-description').css('font-size', '14px');
+      // Mobile
+    } else {
+      // PC
+      $('.sidebar-title').attr('style', "font-family: 'Nanum Brush Script', serif; font-size:30px;")
+      $('.sidebar-description').attr('style', "font-family: 'Nanum Brush Script', serif; font-size:20px;")
     }
   }
 </script>
