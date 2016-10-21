@@ -6,20 +6,19 @@ title: Home
 <div class="hero">
   <img src="{{ site.baseurl }}{{ site.hero.image }}" />
   <!-- <p>{{ site.hero.caption }}</p> -->
-  <!-- <p>어흥 !!<br><br>최근 포스트는 빠른시일내로 구현하겠습니다. =_ =;</p> -->
+   <p>어흥 !!</p>
 </div>
 
-<div class="related">
+<div class="related" style="border-top:none;">
   <h2>Related Posts</h2>
   <ul class="related-posts">
     {% for post in site.posts limit:5 %}
-      <li>
-        <h3>
-          <a href="{{ site.baseurl }}{{ post.url }}">
-            {{ post.title }}
-            <small>{{ post.date | date_to_string }}</small>
-          </a>
-        </h3>
+      <li style="display:inline-block;width:100%">
+        <div style="min-height:100px; position:relative">
+          <img class="post-img" src="{% if post.post_img_url %}{{post.post_img_url}}{% else %}/public/img/logo.png{% endif %}" style="width:100px; height:100px;"></img>
+          <h3><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }} <small>{{ post.date | date_to_string }}</small></a></h3>
+          <h5 class="post-description">{{post.description}}</h5>
+        </div>
       </li>
     {% endfor %}
   </ul>

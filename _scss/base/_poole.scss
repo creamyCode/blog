@@ -96,7 +96,7 @@ h2 {
 }
 h3 {
   margin-top: 1.5rem;
-  font-size: 1.25rem;
+  font-size: 1.10rem;
 }
 h4, h5, h6 {
   margin-top: 1rem;
@@ -343,12 +343,30 @@ tbody tr:nth-child(odd) th {
 .post-title a {
   color: #303030;
 }
-.post-title li {
-  font-size: 18px;
-}
 .page-title,
 .post-title {
   margin-top: 0;
+}
+
+.related-posts .post-img {
+  width: 100px;
+  height: 100px;
+  float: left;
+  margin-right: 10px;
+  margin-bottom:10px;
+}
+.related-posts .post-description {
+  margin-top: 5px;
+  font-size:75%;
+  color:#726D6D;
+}
+.related-posts .post-more {
+  font-size:75%;
+  text-align:right;
+  width:100%;
+  position:absolute;
+  bottom:-5px;
+  color:#b4b4b4;
 }
 
 /* Meta data line below post title */
@@ -371,6 +389,10 @@ tbody tr:nth-child(odd) th {
 }
 .related-posts h3 {
   margin-top: 0;
+}
+.related-posts li {
+  border-bottom: solid 1px #d9d9d9;
+  margin-bottom: 10px;
 }
 .related-posts li small {
   font-size: 75%;

@@ -1,8 +1,10 @@
 ---
 layout: post
-title: Electron, Window에서 Packaging부터 Installer까지 (with Grunt)
+title: Electron, Window에서 Packaging부터 Installer까지
 tags: Electron build Grunt
 categories: Javascript
+description: Electron을 앱을 배포하기 위해서는 앱을 Packaging후 깔끔하게 installer 파일로 bulid하여 배포하는게 좋을텐데요. 여기서는 기본적인 Packaging부터 Installer Build, Grunt를 이용해 빌드 자동화 까지 해보도록 하겠습니다.
+post_img_url: /public/img/2016/electron.jpg
 ---
 Electron을 앱을 배포하기 위해서는 앱을 Packaging후 깔끔하게 installer 파일로 bulid하여 배포하는게 좋을텐데요. 여기서는 기본적인 Packaging부터 Installer Build, Grunt를 이용해 빌드 자동화 까지 해보도록 하겠습니다.
 
