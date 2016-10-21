@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Window에서 Electron Packaging부터 Installer까지 (with Grunt)
+title: Electron, Window에서 Packaging부터 Installer까지 (with Grunt)
 tags: Electron build Grunt
 categories: Javascript
 ---
@@ -63,7 +63,7 @@ createInstaller({
 
 실행은 간단히
 {% highlight js %}
-node Installer.js
+node installer.js
 {% endhighlight %}
 
 # Grunt 를 통한 빌드 자동화

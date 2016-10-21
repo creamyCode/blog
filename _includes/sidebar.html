@@ -54,26 +54,23 @@
         {% endfor %}
       </span> {% endfor %} -->
 
-
-
     <a class="sidebar-nav-item {% if page.url == '/' %}active{% endif %}" href="/">Home</a>
     <a class="sidebar-nav-item {% if page.url == '/about/' %}active{% endif %}" href="/about">About</a>
     <a class="sidebar-nav-item {% if page.url == '/blog/categories/' %}active{% endif %}" href="/blog/categories">Categories</a>
     {% for categorie in site.categories %}
-    <a class="sidebar-nav-item sidebar-nav-item-sub {% if page.url == '/blog/categories/#' + categorie[0] %}active{% endif %}" href="/blog/categories/#{{ categorie[0] }}">
+    <a class="sidebar-nav-item sidebar-nav-item-sub {% if page.url == '/blog/categories/#' + categorie[0] %}active{% endif %}" href="{% if page.url contains '/blog/categories/' %}#{{ categorie[0] | slugify }}{% else %}/blog/categories/#{{ categorie[0] | slugify }}{% endif %}">
           {{ categorie[0] }}
         </a>
         {% endfor %}
     <a class="sidebar-nav-item {% if page.url == '/blog/tags/' %}active{% endif %}" href="/blog/tags">Tags</a>
     <div class="sidebar-tagbox">
       {% for tag in site.tags %}
-      <a href="/blog/tags/#{{ tag[0] }}" class="post-tag">
+      <a href="{% if page.url contains '/blog/tags/' %}#{{ tag[0] | slugify }}{% else %}/blog/tags/#{{ tag[0] | slugify }}{% endif %}" class="post-tag">
       {{ tag[0] }}
     </a> {% endfor %}
     </div>
 
   </nav>
-
 
   <div class="sidebar-item sidebar-powered">
     <p>
@@ -85,15 +82,10 @@
 </div>
 
 <script>
-  // var filter = "win16|win32|win64|mac";
-  //
-  // if (navigator.platform) {
-  //   if (0 > filter.indexOf(navigator.platform.toLowerCase())) {
-  //     // Mobile
-  //   } else {
-  //     // PC
-  //     $('.sidebar-title').attr('style', "font-family: 'Nanum Brush Script', serif; font-size:35px;")
-  //     $('.sidebar-description').attr('style', "font-family: 'Nanum Brush Script', serif; font-size:30px;line-height:30px;")
-  //   }
-  // }
+  $(document).on('click', '.sidebar-nav-item-sub', function() {
+    $('.sidebar-checkbox').prop('checked', false);
+  });
+  $(document).on('click', '.sidebar-tagbox .post-tag', function() {
+    $('.sidebar-checkbox').prop('checked', false);
+  });
 </script>
